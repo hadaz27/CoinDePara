@@ -29,6 +29,9 @@ body {
   padding: 15px 8%;
 }
 
+.logo-section{
+  width: 240px;
+}
 .logo {
   height: 50px;
   width: auto;
@@ -116,12 +119,14 @@ body {
   align-items: right;
   gap: 5px;
   color: #0077B6;
+  padding-top: 0.3rem;
 }
 
 .account a {
   color: #0077B6;
   text-decoration: none;
   font-weight: 500;
+  padding-top: 0.15rem;
 }
 
 .account a:hover {
@@ -152,12 +157,9 @@ body {
 /*  Ends Here*/
 
 .hero {
-  background-color: #E0F5FC;
-  background-image:
-    radial-gradient(circle at 10% 20%, rgba(0, 169, 226, 0.2) 0%, transparent 40%),
-    radial-gradient(circle at 80% 90%, rgba(0, 169, 226, 0.2) 0%, transparent 40%),
-    radial-gradient(circle at 30% 80%, rgba(0, 169, 226, 0.1) 0%, transparent 30%);
+  background-image: url("../images/home/hero-bg.png");
   padding: 100px 8%;
+  height: 490px;
 }
 
 .hero-content {
@@ -182,7 +184,7 @@ body {
 .title {
   font-size: 60px;
   font-weight: 900;
-  color: #0d1a22;
+  color: #03045E;
   margin-top: 10px;
 }
 
