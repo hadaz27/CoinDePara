@@ -105,7 +105,7 @@ p {
 }
 
 .conteneur2 {
-    background-color: #add8e0;
+    background-color: #00B4D8;
     border-radius: 15px;
     box-shadow: 0 4px 10px #ccc;
     width: 50%;
@@ -113,27 +113,32 @@ p {
     flex-direction: column;
     align-items: center;
     padding: 20px 0px;
+    border: 2px solid #0077B6;
 }
 
 .conteneur2 h2 {
-    color:white;
-    padding-bottom: 20px;
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 1px;
+    margin-bottom: 10px;
 
 }
 
 
 .conteneur2 label {
-    color: #00368d;
+    color: white;
+    font-weight: bold;
 }
 
 .conteneur2 input {
     width: 500px;
-    height: 27px;
+    height: 30px;
     border-radius: 14px;
-    border: 1px solid #ccc;
+    border: 1.6px solid white;
     margin: 5px 19px;
     padding: 5px 0px;
     transition: all 0.3s ease;
+    background-color: #66D2E8;
 }
 
 .conteneur2 input:focus {
@@ -147,13 +152,14 @@ p {
 .conteneur2 textarea {
     width: 500px;
     height: 57px;
-    border: 1px solid #ccc;
+    border: 1.6px solid white;
     border-radius: 14px;
     margin: 5px 19px;
     max-height: 70px;
     max-width: 498px;
     min-height: 30px;
     min-width: 500px;
+    background-color: #66D2E8;
     margin-left: 62px;
     transition: all 0.3s ease;
 }
@@ -184,27 +190,16 @@ p {
     justify-content: center;
     margin-left: 35%;
     margin-top: 6px;
-    background-color: #0077B6;
+    background-color: white;
     border-radius: 14px;
     padding-top: 8px;
-    color: white;
+    color: #005f8d;
+    font-weight: bold;
     box-shadow: 0 3px 3px #005f8d;
     cursor: pointer;
 }
 
 .conteneur2 button:active {
-    width: 210px;
-    height: 38px;
-    border: 0px;
-    display: flex;
-    justify-content: center;
-    margin-left: 35%;
-    margin-top: 6px;
-    background-color: #0077B6;
-    border-radius: 14px;
-    padding-top: 8px;
-    color: white;
-    box-shadow: 0 3px 3px #005f8d;
     cursor: pointer;
     font-size: large;
 }
@@ -218,9 +213,10 @@ p {
     margin-left: 35%;
     margin-top: 6px;
     color: white;
-    background-color: #02a5f6;
+    background-color: #0077B6;
     border-radius: 14px;
     padding: 9px 10px;
+    border: 1.7px solid white;
     box-shadow: 0 3px 3px #02a5f6;
     font-weight: bolder;
 }
@@ -266,7 +262,16 @@ p {
         margin: 17px auto;
         display: block;
         font-size: 16px;
-        background-color: #02a5f6;
+        background-color: #0077B6;
+        border-radius: 14px;
+        padding: 5px 10px;
+        border: 1.7px solid white;
+        box-shadow: 0 3px 3px #02a5f6;
+        font-weight: bolder;
+    }
+    .conteneur2 button:active {
+        cursor: pointer;
+        font-weight: 800;
     }
 
     #tele1 {
