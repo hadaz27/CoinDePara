@@ -11,7 +11,7 @@ main {
     grid-area: "main";
 }
 
-footer{
+footer {
     grid-area: "footer";
     background-color: #0077B6;
     width: 100%;
@@ -173,11 +173,22 @@ ul {
 }
 
 @media (max-width: 768px) {
-    .product{
-    }
-    .footer {
+    .container {
+        display: grid;
+        grid-template-rows: 10vh 90vh 100vh;
     }
 
+    .product {}
+
+    .footer {}
+
     .footercontainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .QuickLinks{
+        display: flex;
+        flex-direction: column;
     }
 }
