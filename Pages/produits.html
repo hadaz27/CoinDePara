@@ -5,13 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/produits.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>CoinPara | Produits</title>
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <!-- coding en cour -->
+        <header class="header">
+            <div class="header-container">
+                <div class="logo-section">
+                    <a href="/index.html"><img src="/images/logo.png" alt="Coin De Para logo" class="logo"></a>
+                </div>
+
+                <div class="search-section">
+                    <span class="material-icons search-icon"></span>
+                    <input type="text" placeholder="Recherche de produits" class="search-input">
+                </div>
+                <div class="actions">
+                    <a href="#"><img src="/images/addCart.svg" alt="ajouter au panier" class="cart"></a>
+                    <div class="lang">
+                        <span>FR</span>
+                        <span class="material-icons">expand_more</span>
+                    </div>
+                    <div class="account">
+                        <span><img src="/images/user_icon.png" alt="mon compte"></span>
+                        <a href="#">Mon compte</a>
+                    </div>
+                    <span class="search-icon-mobile"><img src="/images/search.svg" alt="search icon"></span>
+                    <span class="user-icon-mobile"><img src="/images/user.svg" alt="mon compte"></span>
+
+                </div>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <nav class="navbar">
+                <a href="/index.html" class="active">Accueil</a>
+                <a href="/Pages/categories.html">Categories</a>
+                <a href="/Pages/produits.html">Produits</a>
+                <a href="/Pages/faq.html">FAQ</a>
+            </nav>
         </header>
         <main>
             <div class="content">
@@ -97,7 +130,7 @@
         </main>
         <footer>
             <!-- coding en cour -->
-             <p>&copy; 2025 NLClinique. All rights reserved.</p>
+            <p>&copy; 2025 NLClinique. All rights reserved.</p>
         </footer>
 
     </div>
