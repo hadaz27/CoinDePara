@@ -11,23 +11,12 @@ main {
     grid-area: "main";
 }
 
-footer {
+footer{
     grid-area: "footer";
     background-color: #0077B6;
     width: 100%;
-    height: 40vh;
-}
-
-#biglogo {
-    width: 50vh;
-    height: 40vh;
-    margin-top: -17%;
-    margin-left: 30px;
-}
-
-.container {
-    display: grid;
-    grid-template-rows: 120px 1fr 200px;
+    min-height: 100%;
+    margin-top: 50px;
 }
 
 .footercontainer {
@@ -36,8 +25,20 @@ footer {
 }
 
 .footerleft {
-    height: 50vh;
-    width: 60vh;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+#biglogo {
+    width: 40vh;
+    height: 15vh;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 150px 1fr 200px;
 }
 
 .QuickLinks {
@@ -49,10 +50,12 @@ footer {
     color: #FFFFFF;
     margin-left: 30px;
     font-size: 13px;
+    height: 200px;
 }
 
 .QuickLinks div {
     width: 235px;
+    height: 200px;
     align-items: center;
     /* justify-items: center; */
     justify-content: center;
@@ -79,7 +82,7 @@ footer {
     gap: 20px;
     justify-content: center;
     margin-right: 20px;
-    margin-top: -25px;
+    margin-top: 30px;
 }
 
 .socialmedias img {
@@ -95,6 +98,7 @@ footer {
     width: 100%;
     text-decoration: underline;
     font-family: 'Montserrat', sans-serif;
+    padding-top: 10px;
 }
 
 .product img {
@@ -109,6 +113,7 @@ footer {
     margin-left: 0px;
     font-family: 'Montserrat', sans-serif;
     width: 300px;
+    margin-top: 50px;
 }
 
 .product p {
@@ -117,15 +122,15 @@ footer {
     border: solid 3px #008000;
     border-radius: 10px;
     font: bold;
-    width: 150px;
-    margin-left: 25%;
+    width: 200px;
+    margin-left: 16%;
 }
 
 .details {
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 76px;
+    margin-top: 130px;
     width: 100%;
 }
 
@@ -138,9 +143,13 @@ footer {
 
 .details p,
 ul {
-    margin-top: -10px;
+    margin-top: 10px;
     color: #0077B6;
     font-size: 1.05rem;
+}
+
+.details ul {
+    margin-left: 15px;
 }
 
 .details h3 {
@@ -160,14 +169,15 @@ ul {
     margin-left: 25%;
     cursor: pointer;
     border: solid 3px black;
+    margin-top: 20px;
 }
 
-/* @media (max-width: 768px){
-    .detailsproduit{
-        flex-direction: column;
-        flex-basis: 100%;
-
+@media (max-width: 768px) {
+    .product{
+    }
+    .footer {
     }
 
-
-} */
+    .footercontainer {
+    }
+}
