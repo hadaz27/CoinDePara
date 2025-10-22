@@ -3,7 +3,7 @@
 }
 body{
     display: block;
-    margin: 8px;
+    margin: 0;
 }
 
 .container{
@@ -64,12 +64,14 @@ body{
     color: white;
     font-size: 2rem;
     text-align: left;
+    margin-top: 30px;
 }
 
 .produit1 h3 {
     color: white;
     text-align: left;
     font-size: 2.3rem;
+    margin-top: 30px;
     
 }
 
