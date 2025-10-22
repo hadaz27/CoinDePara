@@ -1,10 +1,11 @@
-
-h1{
+h1 {
     color: white;
     text-align: center;
     background: linear-gradient(to right, #6dd5fa, #6dd5fa);
 }
-details{
+
+
+details {
     border: 1px solid rgb(153, 153, 153);
     margin-bottom: 15px;
     padding: 10px;
@@ -15,7 +16,19 @@ details{
 
 }
 
-details:open{
+details:hover {
+    border: 1px solid rgb(153, 153, 153);
+    margin-bottom: 17px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #ccc;
+    color: rgb(254, 254, 254);
+    background-color: #0077B6;
+
+}
+
+details:open {
     border: 0px solid rgb(4, 30, 87);
     margin-bottom: 15px;
     padding: 10px;
@@ -28,6 +41,45 @@ details:open{
 
 }
 
-p{
+details:open:hover {
+    border: 0px solid rgb(4, 30, 87);
+    margin-bottom: 15px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #ccc;
+    background-color: #000fb6;
+    color: rgb(255, 255, 255);
+    font-size: large;
+
+}
+
+
+p {
     color: black;
+}
+
+
+
+.lien-voir-plus {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+
+    text-decoration: none;
+    color: white;
+    background-color: #0077B6;
+    border-radius: 14px;
+    padding: 4px 10px;
+    box-shadow: 0 3px 3px #005f8d;
+}
+
+a:hover {
+    border-radius: 15px;
+    padding: 5px 12px;
+    background-color: #005f8d;
+    box-shadow: 0 3px 3px #005f8d;
+    font-weight: bold;
 }
