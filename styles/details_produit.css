@@ -38,7 +38,7 @@ footer {
 
 .container {
     display: grid;
-    grid-template-rows: 150px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
 }
 
 .QuickLinks {
@@ -51,15 +51,13 @@ footer {
     margin-left: 30px;
     font-size: 13px;
     height: 200px;
+    margin: 0px;
 }
 
 .QuickLinks div {
     width: 235px;
     height: 200px;
-    align-items: center;
-    /* justify-items: center; */
-    justify-content: center;
-    margin-left: 50px;
+    margin-left: 130px;
 }
 
 .QuickLinks ul {
@@ -68,21 +66,26 @@ footer {
     flex-direction: column;
     gap: 8px;
     color: #FFFFFF;
+    /* margin-left: 50px; */
 }
 
 .QuickLinks li {
-    /* margin-left: -38px; */
     margin-top: 10px;
     font-size: 13px;
+    color: #FFFFFF;
+}
 
+#liensutiles {
+    width: 140px;
 }
 
 .socialmedias {
     display: flex;
     gap: 20px;
-    justify-content: center;
     margin-right: 20px;
     margin-top: 30px;
+    margin-left: -1200px;
+    margin-top: 140px;
 }
 
 .socialmedias img {
@@ -142,8 +145,9 @@ footer {
 }
 
 .details p,
-ul {
-    margin-top: 10px;
+ul,
+li {
+    margin-left: 10px;
     color: #0077B6;
     font-size: 1.05rem;
 }
@@ -152,11 +156,10 @@ ul {
     margin-left: 15px;
 }
 
-.details h3 {
-    text-decoration: underline;
+.details h3{
+    font-family: 'Montserrat',sans-serif;
 }
-
-.details button {
+.addbouton {
     background-color: #0077B6;
     height: 70px;
     width: 400px;
@@ -175,7 +178,7 @@ ul {
 @media (max-width: 768px) {
     .container {
         display: grid;
-        grid-template-rows: 10vh 90vh 100vh;
+        grid-template-rows: auto 1fr auto;
     }
 
     .product {}
@@ -186,9 +189,76 @@ ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+
     }
-    .QuickLinks{
+
+    .QuickLinks {
         display: flex;
         flex-direction: column;
+        margin-left: -30px;
+    }
+
+    .QuickLinks li {
+        color: #FFFFFF;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .socialmedias {
+        margin-top: 365px;
+        margin-left: 85px;
+        gap: 50px;
+    }
+
+    .detailsproduit {
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+
+    .addbouton {
+        margin: 0px;
+        width: 150px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .details {
+        margin: 0px;
+    }
+
+    .details p,
+    ul,
+    li {
+        margin-left: 10px;
+        color: #0077B6;
+        font-size: 1.05rem;
+    }
+
+    #biglogo {
+        width: 200px;
+        height: 80px;
+        margin-left: 105px;
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        font-family: 'Montserrat', sans-serif;
+        width: 390px;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product p {
+        text-align: center;
+        font-size: 1.5rem;
+        border: solid 3px #008000;
+        border-radius: 10px;
+        font: bold;
+        width: 200px;
+        margin: 0px;
+        margin-top: 20px;
     }
 }
