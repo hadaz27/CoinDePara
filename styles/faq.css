@@ -1,9 +1,20 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 h1 {
     color: white;
     text-align: center;
-    background: linear-gradient(to right, #6dd5fa, #6dd5fa);
+    padding: 10px;
+    background: linear-gradient(to right, #00B4D8, #66D2E8, #00B4D8);
 }
 
+
+.conteneur1 {
+
+    padding: 20px;
+}
 
 details {
     border: 1px solid rgb(153, 153, 153);
@@ -64,6 +75,7 @@ p {
 .lien-voir-plus {
     display: flex;
     justify-content: center;
+    margin-bottom: 35px;
 }
 
 a {
@@ -79,7 +91,195 @@ a {
 a:hover {
     border-radius: 15px;
     padding: 5px 12px;
-    background-color: #005f8d;
+    background-color: #005e8d49;
     box-shadow: 0 3px 3px #005f8d;
     font-weight: bold;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteneur2 {
+    background-color: #add8e0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px #ccc;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.conteneur2 h2 {
+    color: #0518eb;
+    padding-bottom: 20px;
+}
+
+
+.conteneur2 label {
+    color: #00368d;
+}
+
+.conteneur2 input {
+    width: 500px;
+    height: 27px;
+    border-radius: 14px;
+    border: 1px solid #ccc;
+    margin: 5px 19px;
+    padding: 5px 0px;
+    transition: all 0.3s ease;
+}
+
+.conteneur2 input:focus {
+    border: 1px solid #02a5f6;
+    background-color: #f0faff;
+    box-shadow: 0 0 10px rgba(2, 165, 246, 0.5);
+    transform: scale(1.02);
+    outline: none;
+}
+
+.conteneur2 textarea {
+    width: 500px;
+    height: 57px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    margin: 5px 19px;
+    max-height: 70px;
+    max-width: 498px;
+    min-height: 30px;
+    min-width: 500px;
+    margin-left: 62px;
+    transition: all 0.3s ease;
+}
+
+.conteneur2 textarea:hover {
+    border: 1px solid #02a5f6;
+    background-color: #f0faff;
+    box-shadow: 0 0 10px rgba(2, 165, 246, 0.5);
+    transform: scale(1.02);
+    outline: none;
+}
+
+#email1 {
+    margin-left: 9px;
+}
+
+#nom1 {
+    margin-left: 16px;
+}
+
+
+
+.conteneur2 button {
+    width: 200px;
+    height: 30px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    margin-left: 35%;
+    margin-top: 6px;
+    background-color: #0077B6;
+    border-radius: 14px;
+    padding-top: 8px;
+    color: white;
+    box-shadow: 0 3px 3px #005f8d;
+    cursor: pointer;
+}
+
+.conteneur2 button:active {
+    width: 210px;
+    height: 38px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    margin-left: 35%;
+    margin-top: 6px;
+    background-color: #0077B6;
+    border-radius: 14px;
+    padding-top: 8px;
+    color: white;
+    box-shadow: 0 3px 3px #005f8d;
+    cursor: pointer;
+    font-size: large;
+}
+
+.conteneur2 button:hover {
+    width: 200px;
+    height: 30px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    margin-left: 35%;
+    margin-top: 6px;
+    color: white;
+    background-color: #02a5f6;
+    border-radius: 14px;
+    padding: 9px 10px;
+    box-shadow: 0 3px 3px #02a5f6;
+    font-weight: bolder;
+}
+
+
+
+@media screen and (max-width: 668px) {
+    .conteneur2 {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .conteneur2 h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .conteneur2 input,
+    .conteneur2 textarea {
+        width: 90%;
+        min-height: 100%;
+        min-width: 240px;
+        margin: 8px 0;
+        font-size: 14px;
+    }
+
+    .conteneur2 label {
+        font-size: 18px;
+    }
+
+
+    .conteneur2 button {
+        width: 60%;
+        height: 35px;
+        margin: 15px auto;
+        display: block;
+        font-size: 14px;
+    }
+
+    .conteneur2 button:hover {
+        width: 63%;
+        height: 37px;
+        margin: 17px auto;
+        display: block;
+        font-size: 16px;
+        background-color: #02a5f6;
+    }
+
+    #tele1 {
+        margin-left: 15px;
+    }
+
+    #nom1 {
+        margin-left: 15px;
+    }
+
+    #email1 {
+        margin-left: 15px;
+    }
+
+    #textarea {
+        margin-left: 10px;
+    }
 }

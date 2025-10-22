@@ -22,7 +22,6 @@
                             étapes de paiement.</p>
                     </details>
                 </div>
-
                 <div class="deuxieme-question">
                     <details>
                         <summary>2.Les produits vendus sont-ils authentiques ?</summary>
@@ -67,23 +66,22 @@
         </section>
         <section class="contact-section">
             <div class="conteneur2">
-                <h2>Contact</h2>
+                <h2><u>Contact</u></h2>
                 <form action="">
-                    <h2>Contact</h2>
-                    <label>Nom: </label>
-                    <input type="text">
-                    <label>Email: </label>
-                    <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                    <label>Téle: </label>
-                    <input type="text" pattern="^06[0-9]{8}$" required>
-                    <label>Message: </label>
-                    <textarea></textarea>
-                    <input type="button" value="Envoyer">
+                    <label>Nom :</label>
+                    <input type="text" id="nom1"><br>
+                    <label>Email : </label>
+                    <input type="text" id="email1" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+                    <label>Téle :</label>
+                    <input type="text" id="tele1" pattern="^06[0-9]{8}$" required><br>
+                    <label>Message: </label><br>
+                    <textarea id="textarea"></textarea><br>
+                    <button type="button">Envoyer</button>
                 </form>
             </div>
         </section>
     </main>
-    <footer>
+    <footer style="height: 90px;">
     </footer>
 </body>
 
