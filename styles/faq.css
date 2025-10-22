@@ -8,6 +8,7 @@ h1 {
     text-align: center;
     padding: 10px;
     background: linear-gradient(to right, #00B4D8, #66D2E8, #00B4D8);
+    text-decoration: underline;
 }
 
 
@@ -59,7 +60,7 @@ details:open:hover {
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 4px 10px #ccc;
-    background-color: #000fb6;
+    background-color: #00B4D8;
     color: rgb(255, 255, 255);
     font-size: large;
 
@@ -78,7 +79,7 @@ p {
     margin-bottom: 35px;
 }
 
-a {
+.lien3 {
 
     text-decoration: none;
     color: white;
@@ -88,7 +89,7 @@ a {
     box-shadow: 0 3px 3px #005f8d;
 }
 
-a:hover {
+.lien3:hover {
     border-radius: 15px;
     padding: 5px 12px;
     background-color: #005e8d49;
@@ -115,8 +116,9 @@ a:hover {
 }
 
 .conteneur2 h2 {
-    color: #0518eb;
+    color:white;
     padding-bottom: 20px;
+
 }
 
 

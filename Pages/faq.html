@@ -6,13 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
     <link rel="stylesheet" href="../styles/faq.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <header style="height: 20px;">
+        <header class="header">
+      <div class="header-container">
+        <div class="logo-section">
+          <a href="#"><img src="../images/home/logo.png" alt="Coin De Para logo" class="logo"></a>
+        </div>
+
+        <div class="search-section">
+          <span class="material-icons search-icon">search</span>
+          <input type="text" placeholder="Recherche de produits" class="search-input">
+        </div>
+
+
+        <div class="actions">
+          <a href="#"><img src="../images/home/addCart.svg" alt="ajouter au panier" class="cart"></a>
+          <div class="lang">
+            <span>FR</span>
+            <span class="material-icons">expand_more</span>
+          </div>
+          <div class="account">
+            <span><img src="../images/home/user.svg" alt="mon compte"></span>
+            <a href="#">Mon compte</a>
+          </div>
+          <span class="search-icon-mobile"><img src="../images/home/search.svg" alt="search icon"></span>
+          <span class="user-icon-mobile"><img src="../images/home/user.svg" alt="mon compte"></span>
+          
+        </div>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <nav class="navbar">
+        <a href="#">Accueil</a>
+        <a href="Pages/categories.html">Categories</a>
+        <a href="Pages/produits.html">Produits</a>
+        <a href="Pages/faq.html">FAQ</a>
+      </nav>
     </header>
     <main>
-        <h1> <u>FAQ</u> </h1>
+        <h1>FAQ </h1>
         <section class="faq-section">
             <div class="conteneur1">
                 <div class="permiere-question">
@@ -61,12 +98,12 @@
                 </div>
                 </details>
             </div>
-            <div class="lien-voir-plus"><a href="#">Voir Plus</a></div>
+            <div class="lien-voir-plus"><a class="lien3" href="#">Voir Plus</a></div>
             </div>
         </section>
         <section class="contact-section">
             <div class="conteneur2">
-                <h2><u>Contact</u></h2>
+                <h2>Contact</h2>
                 <form action="">
                     <label>Nom :</label>
                     <input type="text" id="nom1"><br>
