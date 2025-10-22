@@ -56,8 +56,9 @@ footer {
 
 .QuickLinks div {
     width: 235px;
-    height: 200px;
+    height: 230px;
     margin-left: 130px;
+    margin-top: 20px;
 }
 
 .QuickLinks ul {
@@ -205,7 +206,7 @@ li {
     }
 
     .socialmedias {
-        margin-top: 365px;
+        margin-top: 440px;
         margin-left: 85px;
         gap: 50px;
     }
