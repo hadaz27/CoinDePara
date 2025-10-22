@@ -3,7 +3,7 @@
 }
 body{
     display: block;
-    margin: 8px;
+    margin: 8   px;
 }
 
 .container{
@@ -24,28 +24,33 @@ header{
     
 }
 
-.produitBloc{
+.produitBloc ul { 
     display: flex;
     gap: 100px;
     flex-wrap: wrap;
     padding: 20px;
 }
-.produitBloc button{
+.produitBloc li{
     background: #0077B6;
     border: none;
+    list-style: none;
     width: 390px;
     height: 500px;
     border-radius: 20px;
     
 }
+.produitBloc ul li a{
+    text-decoration: none;
+    text-align: center;
+}
 
-.produitBloc button:hover{
+.produitBloc ul li:hover{
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
 }
 
 .produit1{
-    padding: 16px;
+    padding: 30px;
 }
 
 .produit1 h2 {
@@ -73,13 +78,36 @@ header{
 .plusPdoduit ul{
     display: flex;
     gap: 50px;
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 0;
+    margin: 0;
     
 }
 
 .plusPdoduit li{
     list-style: none;
+    
+}
+.plusPdoduit ul li a{
+    text-decoration: none;
+    color: red;         
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.plusPdoduit li a:hover {
+  color: #0077B6;
+}
 
-
+.plusProduit ul li:active a {
+  border: 1.5px solid red;
 }
 
 footer{
