@@ -10,12 +10,13 @@ body {
   color: #222;
 }
 
-.page {
+.home-page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+/* Header starts Here */
 .header {
   background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -65,15 +66,38 @@ body {
   box-shadow: 0 0 0 2px rgba(0, 169, 226, 0.3);
 }
 
+
+.search-icon-mobile {
+  display: none;
+  cursor: pointer;
+  user-select: none;
+}
+.user-icon-mobile {
+  display: none;
+  cursor: pointer;
+  user-select: none;
+}
+.user-icon-mobile img{
+  width: 33px;
+  height: auto;
+  padding-top: 5.5px;
+}
+.search-icon-mobile img{
+  width: 23px;
+  height: auto;
+  padding-top: 3px;
+}
+
+
 .menu-toggle {
   display: none;
 }
 .menu-icon {
   display: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   cursor: pointer;
   user-select: none;
-  color: #00a9e2;
+  color: #0077B6;
 }
 
 .actions {
@@ -89,7 +113,7 @@ body {
 
 .lang, .account {
   display: flex;
-  align-items: center;
+  align-items: right;
   gap: 5px;
   color: #0077B6;
 }
@@ -103,7 +127,7 @@ body {
 .account a:hover {
   color: #00a9e2;
 }
-
+ /* Menu navbar */
 .navbar {
   display: flex;
   justify-content: center;
@@ -118,16 +142,14 @@ body {
   font-weight: 600;
   padding-bottom: 5px;
   border-bottom: 3px solid transparent;
-  transition: all 0.3s ease;
+  transition: all 0.6s ease;
 }
 
 .navbar a:hover {
   border-bottom: 3px solid #fff;
 }
 
-.navbar a.active {
-  border-bottom: 3px solid #fff;
-}
+/*  Ends Here*/
 
 .hero {
   background-color: #E0F5FC;
@@ -176,9 +198,9 @@ body {
   margin-top: 10px;
 }
 
-.btn {
+.btn-promo {
   display: inline-block;
-  background-color: #00a9e2;
+  background-color: #03045E;
   color: #fff;
   font-weight: bold;
   padding: 12px 30px;
@@ -188,7 +210,7 @@ body {
   transition: opacity 0.3s ease;
 }
 
-.btn:hover {
+.btn-promo:hover {
   opacity: 0.85;
 }
 
@@ -205,22 +227,40 @@ body {
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
+    position: absolute;
+    top: 1.3rem;
+    right: 1.8rem;
+  }
+  .account{
+    display: none;
+  }
+  .lang{
+    display: none;
+  }
+  .search-icon-mobile{
+    display: flex;
+  }
+  .user-icon-mobile{
+    display: flex;
+  }
+  .cart{
+    padding-top: 4px;
+  }
+  .actions{
+    margin-right: 2rem;
   }
   .navbar {
     display: none;
     flex-direction: column;
     background: #0077b6;
     position: absolute;
-    top: 60px;
+    top: 84px;
     left: 0;
     width: 100%;
     text-align: center;
     padding: 1rem 0;
   }
-  .actions{
-    display: none;
-  }
-  .menu-toggle:checked + .menu-icon + .nav-links {
+  .menu-toggle:checked + .menu-icon + .navbar {
     display: flex;
   }
 
