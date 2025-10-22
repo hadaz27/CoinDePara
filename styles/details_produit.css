@@ -11,6 +11,12 @@ main {
     grid-area: "main";
 }
 
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* footer for desktop */
 footer {
     grid-area: "footer";
     background-color: #0077B6;
@@ -34,11 +40,6 @@ footer {
     height: 15vh;
     margin-left: 30px;
     margin-top: 20px;
-}
-
-.container {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
 }
 
 .QuickLinks {
@@ -84,9 +85,8 @@ footer {
     display: flex;
     gap: 20px;
     margin-right: 20px;
-    margin-top: 30px;
     margin-left: -1200px;
-    margin-top: 140px;
+    margin-top: 150px;
 }
 
 .socialmedias img {
@@ -157,9 +157,10 @@ li {
     margin-left: 15px;
 }
 
-.details h3{
-    font-family: 'Montserrat',sans-serif;
+.details h3 {
+    font-family: 'Montserrat', sans-serif;
 }
+
 .addbouton {
     background-color: #0077B6;
     height: 70px;
@@ -182,15 +183,11 @@ li {
         grid-template-rows: auto 1fr auto;
     }
 
-    .product {}
-
-    .footer {}
-
+    /* mobile footer */
     .footercontainer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-
     }
 
     .QuickLinks {
@@ -211,6 +208,12 @@ li {
         gap: 50px;
     }
 
+    #biglogo {
+        width: 200px;
+        height: 80px;
+        margin-left: 105px;
+    }
+    /* details Du Produit version mobile */
     .detailsproduit {
         flex-wrap: wrap;
         margin: 0px;
@@ -233,12 +236,6 @@ li {
         margin-left: 10px;
         color: #0077B6;
         font-size: 1.05rem;
-    }
-
-    #biglogo {
-        width: 200px;
-        height: 80px;
-        margin-left: 105px;
     }
 
     .product {
