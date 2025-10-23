@@ -1,10 +1,7 @@
 .footercontainer {
     display: flex;
-    padding: 50px;
-    background: #0077B6;
-    justify-content: center;
-    justify-items: center;
-   
+    width: 200px;
+    height: 250px;
 }
 
 .footerleft #logoCoin{
