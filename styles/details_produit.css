@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    grid-area: "main";
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* footer for desktop */
+footer {
+    grid-area: "footer";
+    background-color: #0077B6;
+    width: 100%;
+    min-height: 100%;
+    margin-top: 50px;
+}
+
+.footercontainer {
+    display: flex;
+    width: 200px;
+}
+
+.footerleft {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+#biglogo {
+    width: 40vh;
+    height: 15vh;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.QuickLinks {
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2%;
+    color: #FFFFFF;
+    margin-left: 30px;
+    font-size: 13px;
+    height: 200px;
+    margin: 0px;
+}
+
+.QuickLinks div {
+    width: 235px;
+    height: 230px;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+
+.QuickLinks ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 8px;
+    color: #FFFFFF;
+    /* margin-left: 50px; */
+}
+
+.QuickLinks li {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+#liensutiles {
+    width: 140px;
+}
+
+.socialmedias {
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+    margin-left: -1200px;
+    margin-top: 150px;
+}
+
+.socialmedias img {
+    width: 40px;
+    height: 40px;
+}
+
+.postheader {
+    background: linear-gradient(to right, #00B4D8, #66D2E8, #00B4D8);
+    text-align: center;
+    color: #FAFAFA;
+    height: 60px;
+    width: 100%;
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10px;
+}
+
+.product img {
+    width: 300px;
+    border: solid 3px #0077B6;
+    border-radius: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    font-family: 'Montserrat', sans-serif;
+    width: 300px;
+    margin-top: 50px;
+}
+
+.product p {
+    text-align: center;
+    font-size: 1.5rem;
+    border: solid 3px #008000;
+    border-radius: 10px;
+    font: bold;
+    width: 200px;
+    margin-left: 16%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 130px;
+    width: 100%;
+}
+
+.detailsproduit {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    gap: 30px;
+}
+
+.details p,
+ul,
+li {
+    margin-left: 10px;
+    color: #0077B6;
+    font-size: 1.05rem;
+}
+
+.details ul {
+    margin-left: 15px;
+}
+
+.details h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.addbouton {
+    background-color: #0077B6;
+    height: 70px;
+    width: 400px;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 9999px;
+    position: relative;
+    margin-left: 25%;
+    cursor: pointer;
+    border: solid 3px black;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    /* mobile footer */
+    .footercontainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .QuickLinks {
+        display: flex;
+        flex-direction: column;
+        margin-left: -30px;
+    }
+
+    .QuickLinks li {
+        color: #FFFFFF;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .socialmedias {
+        margin-top: 440px;
+        margin-left: 85px;
+        gap: 50px;
+    }
+
+    #biglogo {
+        width: 200px;
+        height: 80px;
+        margin-left: 105px;
+    }
+    /* details Du Produit version mobile */
+    .detailsproduit {
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+
+    .addbouton {
+        margin: 0px;
+        width: 150px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .details {
+        margin: 0px;
+    }
+
+    .details p,
+    ul,
+    li {
+        margin-left: 10px;
+        color: #0077B6;
+        font-size: 1.05rem;
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        font-family: 'Montserrat', sans-serif;
+        width: 390px;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product p {
+        text-align: center;
+        font-size: 1.5rem;
+        border: solid 3px #008000;
+        border-radius: 10px;
+        font: bold;
+        width: 200px;
+        margin: 0px;
+        margin-top: 20px;
+    }
+}
