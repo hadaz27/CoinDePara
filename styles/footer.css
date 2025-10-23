@@ -1,48 +1,121 @@
+footer {
+    grid-area: "footer";
+    background-color: #0077B6;
+    width: 100%;
+    min-height: 100%;
+    margin-top: 50px;
+}
+
 .footercontainer {
     display: flex;
     width: 200px;
-    height: 250px;
-    background-color: ;
-}
-.footer{
-    background-color: blue;
-}
-.footerleft #logoCoin{
-    width: 100%;
-    height: 100%;
+    height: 200px;
 }
 
-.socialmedias{
+.footerleft {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+#biglogo {
+    width: 40vh;
+    height: 15vh;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#biglogo:hover{
+    width: 42vh;
+    height: 16vh;
+    transition: 0.2s;
+}
+
+.QuickLinks {
+    gap: 20px;
     display: flex;
-    padding: 20px;
-    gap: 30px;
-    margin-top: 90px;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2%;
+    color: #FFFFFF;
+    margin-left: 30px;
+    font-size: 13px;
+    height: 200px;
+    margin: 0px;
 }
 
+.QuickLinks div {
+    width: 235px;
+    height: 230px;
+    margin-left: 130px;
+    margin-top: 20px;
+}
 
-.QuickLinks{
+.QuickLinks ul {
     display: flex;
     list-style: none;
-    gap: 80px;
+    flex-direction: column;
+    gap: 8px;
     color: #FFFFFF;
-    justify-content: center;
-    justify-items: center;
-    margin-left: 200px;
+    / margin-left: 50px;/
 }
 
+.QuickLinks li {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #FFFFFF;
+}
 
-.QuickLinks li{
+.QuickLinks a {
+   text-decoration: none;
+   color: white;
+}
+
+.QuickLinks li:hover {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+#liensutiles {
+    width: 140px;
+}
+
+.socialmedias {
     display: flex;
-    padding: 10px;
-    color: white;
+    gap: 20px;
+    margin-right: 20px;
+    margin-left: -1200px;
+    margin-top: 150px;
+}
+
+.socialmedias img:hover {
+    width: 45px;
+    height: 45px;
+    border: 1.4px solid white;
+    border-radius: 50%;
+    transition: 0.1s;
+}
+
+.socialmedias img {
+    width: 40px;
+    height: 40px;
 }
 
 @media (max-width: 768px) {
+
     /* mobile footer */
     .footercontainer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    footer {
+        grid-area: "footer";
+        background-color: #0077B6;
+        width: 100%;
+        height: 850px;
+        margin-top: 50px;
     }
 
     .QuickLinks {
@@ -58,7 +131,15 @@
     }
 
     .socialmedias {
+        margin-top: 440px;
         margin-left: 85px;
         gap: 50px;
+    }
+
+    #biglogo {
+        width: 230px;
+        height: 15vh;
+        margin-left: 100px;
+        margin-top: 50px;
     }
 }
