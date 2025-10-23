@@ -8,7 +8,7 @@ body{
 
 .container{
     display: grid;
-    grid-template-rows: 150px 1fr 300px;
+    grid-template-rows: 150px 1fr auto;
     min-height: 100vh;
 
 }
@@ -117,11 +117,6 @@ body{
 
 .plusProduit ul li:active a {
   border: 1.5px solid red;
-}
-
-footer{
-    background: fuchsia;
-    margin-top: 50px;
 }
 
 @media (max-width: 768px){
