@@ -80,7 +80,7 @@ body {
     left: 120%;
 }
 
-/* Mobile version */
+
 @media (max-width: 768px) {
     .section-title {
         font-size: 32px;
