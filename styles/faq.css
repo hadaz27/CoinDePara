@@ -3,7 +3,7 @@
     margin: 0px;
 }
 
-h1 {
+.tittre-main {
     color: white;
     text-align: center;
     padding: 10px;
@@ -13,11 +13,10 @@ h1 {
 
 
 .conteneur1 {
-
     padding: 20px;
 }
 
-details {
+.details-faq {
     border: 1px solid rgb(153, 153, 153);
     margin-bottom: 15px;
     padding: 10px;
@@ -28,7 +27,7 @@ details {
 
 }
 
-details:hover {
+.details-faq:hover {
     border: 1px solid rgb(153, 153, 153);
     margin-bottom: 17px;
     padding: 12px;
@@ -40,35 +39,25 @@ details:hover {
 
 }
 
-details:open {
-    border: 0px solid rgb(4, 30, 87);
-    margin-bottom: 15px;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px #ccc;
-    background-color: #0077B6;
-    color: rgb(255, 255, 255);
-    font-size: large;
-
+.details-faq[open] {
+  border: 0;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px #ccc;
+  background-color: #0077B6;
+  color: #fff;
+  font-size: large;
 }
 
-details:open:hover {
-    border: 0px solid rgb(4, 30, 87);
-    margin-bottom: 15px;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px #ccc;
-    background-color: #00B4D8;
-    color: rgb(255, 255, 255);
-    font-size: large;
-
+.details-faq[open]:hover {
+  background-color: #00B4D8;
 }
 
 
-p {
+.details-faq p {
     color: black;
+    padding-left: 12px;
 }
 
 
@@ -79,22 +68,30 @@ p {
     margin-bottom: 35px;
 }
 
-.lien3 {
-
+.btn-voir-plus {
     text-decoration: none;
-    color: white;
+    border: 1px solid #0077B6;
+    padding: 6px 25px;
     background-color: #0077B6;
-    border-radius: 14px;
-    padding: 4px 10px;
-    box-shadow: 0 3px 3px #005f8d;
+    color: white;
+    border-radius: 16px;
+    box-shadow: 10px 10px 10px #ccc;
+
 }
 
-.lien3:hover {
-    border-radius: 15px;
-    padding: 5px 12px;
-    background-color: #005e8d49;
-    box-shadow: 0 3px 3px #005f8d;
+.disabled {
+  display: none;
+}
+
+.btn-voir-plus:hover {
+    text-decoration: none;
+    border: 1px solid #0077B6;
+    padding: 6px 25px;
+    background-color: #0077B6;
+    color: white;
+    border-radius: 16px;
     font-weight: bold;
+    box-shadow: 0 10px 10px #ccc;
 }
 
 .contact-section {
@@ -102,6 +99,13 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+
+.contact-section h2 {
+
+    color: rgb(4, 30, 87);
+    margin-bottom: 40px;
 }
 
 .conteneur2 {
@@ -120,7 +124,7 @@ p {
     color: white;
     border-bottom: 2px solid white;
     padding-bottom: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 
 }
 
@@ -131,14 +135,23 @@ p {
 }
 
 .conteneur2 input {
-    width: 500px;
+    width: 350px;
     height: 30px;
     border-radius: 14px;
     border: 1.6px solid white;
-    margin: 5px 19px;
+    margin-bottom: 10px;
+    margin-left: 20px;
     padding: 5px 0px;
     transition: all 0.3s ease;
     background-color: #66D2E8;
+}
+
+#email1 {
+    margin-left: 5px;
+}
+
+#tele1 {
+    margin-left: 45px;
 }
 
 .conteneur2 input:focus {
@@ -150,17 +163,15 @@ p {
 }
 
 .conteneur2 textarea {
-    width: 500px;
-    height: 57px;
     border: 1.6px solid white;
     border-radius: 14px;
-    margin: 5px 19px;
+    margin: 5px;
     max-height: 70px;
-    max-width: 498px;
-    min-height: 30px;
-    min-width: 500px;
+    max-width: 345px;
+    min-height: 70px;
+    min-width: 345px;
     background-color: #66D2E8;
-    margin-left: 62px;
+    margin-left: 155px;
     transition: all 0.3s ease;
 }
 
@@ -171,16 +182,6 @@ p {
     transform: scale(1.02);
     outline: none;
 }
-
-#email1 {
-    margin-left: 9px;
-}
-
-#nom1 {
-    margin-left: 16px;
-}
-
-
 
 .conteneur2 button {
     width: 200px;
@@ -202,6 +203,10 @@ p {
 .conteneur2 button:active {
     cursor: pointer;
     font-size: large;
+}
+
+.conteneur2 label {
+    margin-left: 20px;
 }
 
 .conteneur2 button:hover {
@@ -269,6 +274,7 @@ p {
         box-shadow: 0 3px 3px #02a5f6;
         font-weight: bolder;
     }
+
     .conteneur2 button:active {
         cursor: pointer;
         font-weight: 800;

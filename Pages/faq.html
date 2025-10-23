@@ -7,60 +7,62 @@
     <title>FAQ</title>
     <link rel="stylesheet" href="../styles/faq.css">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/footer.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-        <header class="header">
-      <div class="header-container">
-        <div class="logo-section">
-          <a href="#"><img src="../images/home/logo.png" alt="Coin De Para logo" class="logo"></a>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="../index.html"><img src="../images/home/logo.png" alt="Coin De Para logo" class="logo"></a>
+            </div>
+
+            <div class="search-section">
+                <span class="material-icons search-icon">search</span>
+                <input type="text" placeholder="Recherche de produits" class="search-input">
+            </div>
+
+
+            <div class="actions">
+                <a href="#"><img src="../images/home/addCart.svg" alt="ajouter au panier" class="cart"></a>
+                <div class="lang">
+                    <span>FR</span>
+                    <span class="material-icons">expand_more</span>
+                </div>
+                <div class="account">
+                    <span><img src="../images/home/user.svg" alt="mon compte"></span>
+                    <a href="#">Mon compte</a>
+                </div>
+                <span class="search-icon-mobile"><img src="../images/home/search.svg" alt="search icon"></span>
+                <span class="user-icon-mobile"><img src="../images/home/user.svg" alt="mon compte"></span>
+
+            </div>
         </div>
 
-        <div class="search-section">
-          <span class="material-icons search-icon">search</span>
-          <input type="text" placeholder="Recherche de produits" class="search-input">
-        </div>
-
-
-        <div class="actions">
-          <a href="#"><img src="../images/home/addCart.svg" alt="ajouter au panier" class="cart"></a>
-          <div class="lang">
-            <span>FR</span>
-            <span class="material-icons">expand_more</span>
-          </div>
-          <div class="account">
-            <span><img src="../images/home/user.svg" alt="mon compte"></span>
-            <a href="#">Mon compte</a>
-          </div>
-          <span class="search-icon-mobile"><img src="../images/home/search.svg" alt="search icon"></span>
-          <span class="user-icon-mobile"><img src="../images/home/user.svg" alt="mon compte"></span>
-          
-        </div>
-      </div>
-
-      <input type="checkbox" id="menu-toggle" class="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <nav class="navbar">
-        <a href="#">Accueil</a>
-        <a href="Pages/categories.html">Categories</a>
-        <a href="Pages/produits.html">Produits</a>
-        <a href="Pages/faq.html">FAQ</a>
-      </nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav class="navbar">
+            <a href="../index.html">Accueil</a>
+            <a href="Pages/categories.html">Categories</a>
+            <a href="Pages/produits.html">Produits</a>
+            <a href="./faq.html">FAQ</a>
+        </nav>
     </header>
     <main>
-        <h1>FAQ </h1>
+        <h1 class="tittre-main">FAQ </h1>
         <section class="faq-section">
+            <h2 class="disabled">Titre désactivé</h2>
             <div class="conteneur1">
                 <div class="permiere-question">
-                    <details>
+                    <details class="details-faq">
                         <summary>1.Comment passer une commande sur le site ?</summary>
                         <p>Pour passer une commande, sélectionnez vos produits, ajoutez-les au panier, puis suivez les
                             étapes de paiement.</p>
                     </details>
                 </div>
                 <div class="deuxieme-question">
-                    <details>
+                    <details class="details-faq">
                         <summary>2.Les produits vendus sont-ils authentiques ?</summary>
                         <p>Nous travaillons exclusivement avec des laboratoires reconnus et des marques partenaires
                             certifiées, afin de garantir la qualité, la sécurité et l'efficacité de chaque produit
@@ -73,7 +75,7 @@
                 </div>
 
                 <div class="troisieme-question">
-                    <details>
+                    <details class="details-faq">
                         <summary>
                             3.Quels sont les délais de livraison ?
                         </summary>
@@ -82,7 +84,7 @@
                 </div>
 
                 <div class="quatrieme-question">
-                    <details>
+                    <details class="details-faq">
                         <summary>
                             4.Puis-je retourner un produit après l'achat ?
                         </summary>
@@ -93,32 +95,80 @@
                             obtenir les instructions de retour.
                         </p>
                     </details>
-
-
                 </div>
-                </details>
             </div>
-            <div class="lien-voir-plus"><a class="lien3" href="#">Voir Plus</a></div>
-            </div>
+            <div class="lien-voir-plus"><a class="btn-voir-plus" href="#">Voir Plus</a></div>
         </section>
         <section class="contact-section">
+            <h2 class="disabled">Titre désactivé</h2>
             <div class="conteneur2">
                 <h2>Contact</h2>
-                <form action="">
+                <form action="#" method="post">
                     <label>Nom complet :</label>
-                    <input type="text" id="nom1"><br>
-                    <label>Addresse email : </label>
-                    <input type="text" id="email1" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
-                    <label>Téléphone :</label>
-                    <input type="text" id="tele1" pattern="^06[0-9]{8}$" required><br>
-                    <label>Message: </label><br>
-                    <textarea id="textarea"></textarea><br>
-                    <button type="button">Envoyer</button>
+                    <input type="text" id="nom1" name="nom" placeholder="Entrez votre nom complet"><br>
+                    <label for="email1">Adresse email :</label>
+                    <input type="email" id="email1" name="email" placeholder="exemple@gmail.com"
+                        pattern="[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                        title="Veuillez entrer une adresse email valide (exemple@exemple.xxx)" required>
+                    <br><br>
+                    <label for="tele1">Téléphone :</label>
+                    <input type="tel" id="tele1" placeholder="06XXXXXXXX" pattern="^06\d{8}$"
+                        title="Veuillez entrer un numéro commençant par 06 suivi de 8 chiffres" required>
+                    <br>
+                    <label>Message :</label><br>
+                    <textarea id="textarea" name="message" placeholder="Écrivez votre message ici..."></textarea><br>
+                    <button type="submit">Envoyer</button>
                 </form>
             </div>
         </section>
     </main>
-    <footer style="height: 90px;">
+    <footer>
+        <div class="footercontainer">
+            <div class="footerleft">
+                <img id="biglogo" src="../images/logo.png" alt="CoinDePara">
+            </div>
+            <div class="QuickLinks">
+                <div>
+                    <ul>
+                        <li>
+                            <h2>Qui Sommes-Nous ?</h2>
+                        </li>
+                        <li>A propos de Coin de para</li>
+                        <li>Contactez-Nous</li>
+                        <li>Dernières Nouvelles</li>
+                        <li>Localisation</li>
+                    </ul>
+                </div>
+                <div>
+
+                    <ul>
+                        <li>
+                            <h2>Notre Politique</h2>
+                        </li>
+                        <li>Politique De Remboursement</li>
+                        <li>Conditions D'expédition</li>
+                        <li>Politique de Confidentialité</li>
+                        <li>Conditions Générales</li>
+                    </ul>
+                </div>
+                <div id="liensutiles">
+
+                    <ul>
+                        <li>
+                            <h2>Liens Utiles</h2>
+                        </li>
+                        <li>Parcourir Par Marque</li>
+                        <li>Newsletter</li>
+                        <li>Offres/Coupons</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="socialmedias">
+                <img src="../images/SocialMediasIcons/logoinsta.png" alt="Instagram">
+                <img src="../images/SocialMediasIcons/logofb.png" alt="Facebook">
+                <img src="../images/SocialMediasIcons/logotwitter.png" alt="Twitter">
+            </div>
+        </div>
     </footer>
 </body>
 
