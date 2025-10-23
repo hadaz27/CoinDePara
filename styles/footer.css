@@ -8,8 +8,7 @@
 }
 
 .footerleft #logoCoin{
-    width: auto;
-    height: auto;
+    height: 90px;
 }
 
 .socialmedias{
@@ -23,11 +22,11 @@
 .QuickLinks{
     display: flex;
     list-style: none;
-    gap: 80px;
+    gap: 50px;
     color: #FFFFFF;
     justify-content: center;
     justify-items: center;
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 
@@ -40,7 +39,7 @@
 .copyright{
     text-align: center;
     background: #0077B6;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 @media (max-width: 768px) {
