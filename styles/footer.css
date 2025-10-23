@@ -3,13 +3,13 @@ footer {
     background-color: #0077B6;
     width: 100%;
     min-height: 100%;
-    margin-top: 50px;
 }
 
 .footercontainer {
     display: flex;
     width: 200px;
-    height: 200px;
+    height: 250px;
+
 }
 
 .footerleft {
@@ -114,8 +114,7 @@ footer {
         grid-area: "footer";
         background-color: #0077B6;
         width: 100%;
-        height: 850px;
-        margin-top: 50px;
+        height: 900px;
     }
 
     .QuickLinks {
@@ -131,7 +130,7 @@ footer {
     }
 
     .socialmedias {
-        margin-top: 440px;
+        margin-top: 400px;
         margin-left: 85px;
         gap: 50px;
     }
