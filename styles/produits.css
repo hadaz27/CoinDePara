@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: block;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 150px 1fr auto;
+    min-height: 100vh;
+
+}
+
+.content{
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    
+}
+
+.content h1{
+    color: white;
+    background: #66D2E8;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+    font-size: 2.5rem;
+}
+
+.produitBloc ul { 
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.produitBloc li{
+    background: #0077B6;
+    border: none;
+    list-style: none;
+    width: 390px;
+    height: 500px;
+    border-radius: 20px;
+    
+}
+.produitBloc ul li a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.produitBloc ul li:hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
+}
+
+.produit1{
+    padding: 30px;
+}
+
+.produit1 h2 {
+    color: white;
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.produit1 h3 {
+    color: white;
+    text-align: left;
+    font-size: 2.3rem;
+    margin-top: 30px;
+    
+}
+
+
+.produit1 img{
+    background: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    
+}
+
+.plusPdoduit ul{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.plusPdoduit li{
+    list-style: none;
+    
+}
+.plusPdoduit ul li a{
+    text-decoration: none;
+    color: red;         
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.plusPdoduit li a:hover {
+  color: #0077B6;
+}
+
+.plusProduit ul li:active a {
+  border: 1.5px solid red;
+}
+
+@media (max-width: 768px){
+    .produitBloc{
+        flex-direction: column;
+    }
+    .produit1{
+        flex-basis: 100%;
+    }
+
+    
+}

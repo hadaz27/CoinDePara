@@ -56,7 +56,7 @@ footer {
     flex-direction: column;
     gap: 8px;
     color: #FFFFFF;
-    margin-left: 50px;
+    / margin-left: 50px;/
 }
 
 .QuickLinks li {
