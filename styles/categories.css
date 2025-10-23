@@ -1,29 +1,115 @@
 body {
     background-color: #ffffff;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 } 
 
 .section-title {
-  background: linear-gradient(90deg, #00B4D8, #66D2E8, #00B4D8);
-  color: white;
-  text-align: center;
-  padding: 23px 44px;
-  font-size: 50px;
-  font-family: montserrat;
-  
+    background: linear-gradient(90deg, #00B4D8, #66D2E8, #00B4D8);
+    color: white;
+    text-align: center;
+    padding: 23px 44px;
+    font-size: 50px;
+    font-family: Montserrat, sans-serif;
 }
-.description                        
-{
-   color: #1A8ECC;
-  font-size: 21px;
-  font-family: cardo;
-   margin-left: 50px;
+
+.description {
+    color: #1A8ECC;
+    font-size: 21px;
+    font-family: Cardo, serif;
+    margin-left: 50px;
 }
-.catégories{
-    display: flex;
+
+.catégories {
     padding: 30px;
-    gap: 100px;
 }
 
+.catégories p {
+    font-size: 38px; 
+    font-weight: bold;
+    text-align: center;
+    color: #333; 
+}
 
+.bloc {
+    display: flex;
+    gap: 85px;
+}
+
+.bloc img {
+    margin-left: 80px; 
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+    background-color: #00a9d4;
+    color: white;
+    padding: 26px 35px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75px;
+    width: 50px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: skewX(-20deg);
+    transition: left 0.5s ease;
+}
+
+.btn:hover {
+    background-color: #008bb3;
+    transform: translateY(-3px);
+}
+
+.btn:hover::after {
+    left: 120%;
+}
+
+/* Mobile version */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 32px;
+        padding: 20px 10px;
+    }
+
+    .description {
+        font-size: 16px;
+        margin: 15px 10px;
+    }
+
+    .catégories p {
+        font-size: 24px;
+    }
+
+    .bloc {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .bloc img {
+        margin-left: 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .btn {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+}
