@@ -14,6 +14,7 @@ main {
 .container {
     display: grid;
     grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
 .postheader {
@@ -99,6 +100,41 @@ li {
     margin-top: 20px;
 }
 
+#available_colors {
+    display: flex;
+    list-style: none;
+}
+
+#available_colors li {
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+#rose {
+    height: 50px;
+    width: 50px;
+    background-color: #FF7B92;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+#vert {
+    height: 50px;
+    width: 50px;
+    background-color: #4AE14A;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+#violet {
+    height: 50px;
+    width: 50px;
+    background-color: #9345FF;
+    border-radius: 50%;
+    border: 3px solid black;
+
+}
+
 @media (max-width: 768px) {
     .container {
         display: grid;
@@ -110,6 +146,7 @@ li {
         height: 80px;
         margin-left: 105px;
     }
+
     /* details Du Produit version mobile */
     .detailsproduit {
         flex-wrap: wrap;

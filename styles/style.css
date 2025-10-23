@@ -176,28 +176,35 @@ body {
 }
 
 .subtitle {
-  color: #00a9e2;
-  font-weight: 600;
-  font-size: 18px;
+  color: #0077B6;
+  font-weight: 500;
+  font-size: 3.2rem;
 }
 
 .title {
   font-size: 60px;
   font-weight: 900;
   color: #03045E;
-  margin-top: 10px;
 }
 
 .desc {
-  font-size: 24px;
-  color: #555;
-  margin-top: 15px;
+  font-size:30px;
+  color: #0077B6;
+}
+.under-line{
+  background-color: #184363;
+  width: 180px;
+  height: 3px;
+  border-radius: 4px;
+  margin: 20px 0 20px 0;
 }
 
 .desc-small {
   font-size: 18px;
-  color: #777;
+  color: #184363;
   margin-top: 10px;
+  font-weight: 500px;
+  font-size: 24px;
 }
 
 .btn-promo {
@@ -227,6 +234,15 @@ body {
 }
 
 @media (max-width: 768px) {
+  .btn-promo{
+    padding: 12px 130px;
+  }
+  .under-line{
+    width: 395px;
+  }
+  .desc-small{
+    font-size: 21.5px;
+  }
   .menu-icon {
     display: block;
     position: absolute;
@@ -234,6 +250,9 @@ body {
     right: 1.8rem;
   }
   .account{
+    display: none;
+  }
+  .hero-image{
     display: none;
   }
   .lang{
