@@ -1,7 +1,29 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #22b051;
-  color: #333;
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+} 
+
+.section-title {
+  background: linear-gradient(90deg, #00B4D8, #66D2E8, #00B4D8);
+  color: white;
+  text-align: center;
+  padding: 23px 44px;
+  font-size: 50px;
+  font-family: montserrat;
+  
 }
+.description                        
+{
+   color: #1A8ECC;
+  font-size: 21px;
+  font-family: cardo;
+   margin-left: 50px;
+}
+.catégories{
+    display: flex;
+    padding: 30px;
+    gap: 100px;
+}
+
+
