@@ -124,6 +124,13 @@
 
 }
 
+.conteneur2:hover{
+    background-color: #1792ab;
+    box-shadow: 0 8px 18px #ccc;
+    border: 3px solid #0077B6;
+
+}
+
 .conteneur2 h2 {
     color: white;
     border-bottom: 2px solid white;
@@ -160,10 +167,22 @@ form {
     transition: all 0.3s ease;
     font-size: 15px;
     resize: none;
+    transition: 0.6s;
 }
 
 .conteneur2 textarea {
     height: 70px;
+}
+.conteneur2 textarea:hover {
+    background-color: #ffffff;
+    width: 101%;
+    height: 80px;
+}
+
+.conteneur2 input:hover{
+    background-color: #ffffff;
+    width: 101%;
+    height: 40px;
 }
 
 .conteneur2 input:focus,
@@ -190,7 +209,7 @@ form {
 }
 
 .conteneur2 button:hover {
-    background-color: #0077B6;
+    background-color: #012b41;
     color: white;
     box-shadow: 0 3px 3px #02a5f6;
     transform: scale(1.05);
