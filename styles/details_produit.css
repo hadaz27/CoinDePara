@@ -27,7 +27,8 @@ main {
     font-family: 'Montserrat', sans-serif;
     padding-top: 10px;
 }
-
+.postheader h1{
+}
 .product img {
     width: 300px;
     height: 415px;
