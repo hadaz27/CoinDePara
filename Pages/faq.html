@@ -50,9 +50,9 @@
         <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <nav class="navbar">
             <a href="../index.html">Accueil</a>
-            <a href="Pages/categories.html">Categories</a>
-            <a href="Pages/produits.html">Produits</a>
-            <a href="./faq.html">FAQ</a>
+            <a href="categories.html">Categories</a>
+            <a href="produits.html">Produits</a>
+            <a href="faq.html">FAQ</a>
         </nav>
     </header>
     <main>
@@ -109,17 +109,17 @@
             <h2 class="disabled">Contactez-nous</h2>
             <div class="conteneur2">
                 <h2>Contact</h2>
-                <form action="#" method="post">
+                <form action="#" method="get">
                     <div class="form-group">
                         <label for="nom1">Nom complet :</label>
-                        <input type="text" id="nom1" name="nom" placeholder="Entrez votre nom complet">
+                        <input type="text" id="nom1" placeholder="Entrez votre nom complet">
                     </div>
 
                     <div class="form-group">
                         <label for="email1">Adresse email :</label>
-                        <input type="text" id="email1" name="email" placeholder="exemple@gmail.com"
-                            pattern="[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                            title="Veuillez entrer une adresse email valide (exemple@exemple.xxx)" required>
+                        <input type="text" id="email1" placeholder="exemple@gmail.com"
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                            title="Veuillez entrer comme (exemple@exemple.xxx)" >
                     </div>
 
                     <div class="form-group">
@@ -130,7 +130,7 @@
 
                     <div class="form-group">
                         <label for="textarea">Message :</label>
-                        <textarea id="textarea" name="message" placeholder="Écrivez votre message ici..."></textarea>
+                        <textarea id="textarea" placeholder="Écrivez votre message ici..."></textarea>
                     </div>
 
                     <button type="submit">Envoyer</button>

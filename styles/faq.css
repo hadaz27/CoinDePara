@@ -159,6 +159,9 @@ form {
     resize: none;
 }
 
+.conteneur2 textarea{
+    height: 70px;
+}
 .conteneur2 input:focus,
 .conteneur2 textarea:focus {
     border: 1px solid #02a5f6;
