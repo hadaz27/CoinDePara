@@ -40,18 +40,18 @@
 }
 
 .details-faq[open] {
-  border: 0;
-  margin-bottom: 15px;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px #ccc;
-  background-color: #0077B6;
-  color: #fff;
-  font-size: large;
+    border: 0;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #ccc;
+    background-color: #0077B6;
+    color: #fff;
+    font-size: large;
 }
 
 .details-faq[open]:hover {
-  background-color: #00B4D8;
+    background-color: #00B4D8;
 }
 
 
@@ -80,7 +80,7 @@
 }
 
 .disabled {
-  display: none;
+    display: none;
 }
 
 .btn-voir-plus:hover {
@@ -94,205 +94,145 @@
     box-shadow: 0 10px 10px #ccc;
 }
 
+
 .contact-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 50px 20px;
 }
 
-
 .contact-section h2 {
-
     color: rgb(4, 30, 87);
     margin-bottom: 40px;
+
 }
 
 .conteneur2 {
     background-color: #00B4D8;
     border-radius: 15px;
     box-shadow: 0 4px 10px #ccc;
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0px;
+    padding: 30px 20px;
     border: 2px solid #0077B6;
+    margin-top: -40px;
+
+}
+
+.conteneur2:hover{
+    background-color: #1792ab;
+    box-shadow: 0 8px 18px #ccc;
+    border: 3px solid #0077B6;
+
 }
 
 .conteneur2 h2 {
     color: white;
     border-bottom: 2px solid white;
-    padding-bottom: 1px;
-    margin-bottom: 30px;
-
+    padding-bottom: 5px;
+    margin-bottom: 25px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
 .conteneur2 label {
     color: white;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.conteneur2 input {
-    width: 350px;
-    height: 30px;
+.conteneur2 input,
+.conteneur2 textarea {
+    width: 100%;
     border-radius: 14px;
     border: 1.6px solid white;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    padding: 5px 0px;
-    transition: all 0.3s ease;
+    padding: 8px 12px;
     background-color: #66D2E8;
-}
-
-#email1 {
-    margin-left: 5px;
-}
-
-#tele1 {
-    margin-left: 45px;
-}
-
-.conteneur2 input:focus {
-    border: 1px solid #02a5f6;
-    background-color: #f0faff;
-    box-shadow: 0 0 10px rgba(2, 165, 246, 0.5);
-    transform: scale(1.02);
-    outline: none;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    resize: none;
+    transition: 0.6s;
 }
 
 .conteneur2 textarea {
-    border: 1.6px solid white;
-    border-radius: 14px;
-    margin: 5px;
-    max-height: 70px;
-    max-width: 345px;
-    min-height: 70px;
-    min-width: 345px;
-    background-color: #66D2E8;
-    margin-left: 155px;
-    transition: all 0.3s ease;
+    height: 70px;
+}
+.conteneur2 textarea:hover {
+    background-color: #ffffff;
+    width: 101%;
+    height: 80px;
 }
 
-.conteneur2 textarea:hover {
+.conteneur2 input:hover{
+    background-color: #ffffff;
+    width: 101%;
+    height: 40px;
+}
+
+.conteneur2 input:focus,
+.conteneur2 textarea:focus {
     border: 1px solid #02a5f6;
     background-color: #f0faff;
     box-shadow: 0 0 10px rgba(2, 165, 246, 0.5);
-    transform: scale(1.02);
     outline: none;
 }
 
 .conteneur2 button {
-    width: 200px;
-    height: 30px;
-    border: 0px;
-    display: flex;
-    justify-content: center;
-    margin-left: 35%;
-    margin-top: 6px;
+    align-self: center;
+    width: 50%;
+    min-width: 180px;
+    height: 40px;
+    border: none;
     background-color: white;
-    border-radius: 14px;
-    padding-top: 8px;
     color: #005f8d;
     font-weight: bold;
+    border-radius: 14px;
     box-shadow: 0 3px 3px #005f8d;
     cursor: pointer;
-}
-
-.conteneur2 button:active {
-    cursor: pointer;
-    font-size: large;
-}
-
-.conteneur2 label {
-    margin-left: 20px;
+    transition: all 0.3s ease;
 }
 
 .conteneur2 button:hover {
-    width: 200px;
-    height: 30px;
-    border: 0px;
-    display: flex;
-    justify-content: center;
-    margin-left: 35%;
-    margin-top: 6px;
+    background-color: #012b41;
     color: white;
-    background-color: #0077B6;
-    border-radius: 14px;
-    padding: 9px 10px;
-    border: 1.7px solid white;
     box-shadow: 0 3px 3px #02a5f6;
-    font-weight: bolder;
+    transform: scale(1.05);
 }
 
-
-
-@media screen and (max-width: 668px) {
+@media (max-width: 768px) {
     .conteneur2 {
-        width: 80%;
-        padding: 15px;
-    }
-
-    .conteneur2 h2 {
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .conteneur2 input,
-    .conteneur2 textarea {
         width: 90%;
-        min-height: 100%;
-        min-width: 240px;
-        margin: 8px 0;
-        font-size: 14px;
+        padding: 20px;
     }
-
-    .conteneur2 label {
-        font-size: 18px;
-    }
-
 
     .conteneur2 button {
-        width: 60%;
-        height: 35px;
-        margin: 15px auto;
-        display: block;
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .conteneur2 {
+        width: 95%;
+    }
+
+    .conteneur2 button {
+        width: 80%;
         font-size: 14px;
-    }
-
-    .conteneur2 button:hover {
-        width: 63%;
-        height: 37px;
-        margin: 17px auto;
-        display: block;
-        font-size: 16px;
-        background-color: #0077B6;
-        border-radius: 14px;
-        padding: 5px 10px;
-        border: 1.7px solid white;
-        box-shadow: 0 3px 3px #02a5f6;
-        font-weight: bolder;
-    }
-
-    .conteneur2 button:active {
-        cursor: pointer;
-        font-weight: 800;
-    }
-
-    #tele1 {
-        margin-left: 15px;
-    }
-
-    #nom1 {
-        margin-left: 15px;
-    }
-
-    #email1 {
-        margin-left: 15px;
-    }
-
-    #textarea {
-        margin-left: 10px;
     }
 }
