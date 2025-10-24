@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Coin de Para - Découvrez nos produits de parapharmacie, nos conseils santé et bien-être, et contactez notre équipe pour toute question.">
+    <meta name="description"
+        content="Coin de Para - Découvrez nos produits de parapharmacie, nos conseils santé et bien-être, et contactez notre équipe pour toute question.">
     <meta name="keywords" content="parapharmacie, santé, beauté, bien-être, produits naturels, soins, Coin de Para">
     <meta name="author" content="Coin de Para">
     <meta name="robots" content="index, follow">
@@ -109,28 +110,39 @@
             <div class="conteneur2">
                 <h2>Contact</h2>
                 <form action="#" method="post">
-                    <label for="nom1">Nom complet :</label>
-                    <input type="text" id="nom1" name="nom" placeholder="Entrez votre nom complet"><br>
-                    <label for="email1">Adresse email :</label>
-                    <input type="email" id="email1" name="email" placeholder="exemple@gmail.com"
-                        pattern="[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                        title="Veuillez entrer une adresse email valide (exemple@exemple.xxx)" required>
-                    <br><br>
-                    <label for="tele1">Téléphone :</label>
-                    <input type="tel" id="tele1" placeholder="06XXXXXXXX" pattern="^06\d{8}$"
-                        title="Veuillez entrer un numéro commençant par 06 suivi de 8 chiffres" required>
-                    <br>
-                    <label>Message :</label><br>
-                    <textarea id="textarea" name="message" placeholder="Écrivez votre message ici..."></textarea><br>
+                    <div class="form-group">
+                        <label for="nom1">Nom complet :</label>
+                        <input type="text" id="nom1" name="nom" placeholder="Entrez votre nom complet">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email1">Adresse email :</label>
+                        <input type="text" id="email1" name="email" placeholder="exemple@gmail.com"
+                            pattern="[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                            title="Veuillez entrer une adresse email valide (exemple@exemple.xxx)" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tele1">Téléphone :</label>
+                        <input type="text" id="tele1" placeholder="06XXXXXXXX" pattern="^06\d{8}$"
+                            title="Veuillez entrer un numéro commençant par 06 suivi de 8 chiffres" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="textarea">Message :</label>
+                        <textarea id="textarea" name="message" placeholder="Écrivez votre message ici..."></textarea>
+                    </div>
+
                     <button type="submit">Envoyer</button>
                 </form>
             </div>
         </section>
+
     </main>
     <footer>
         <div class="footercontainer">
             <div class="footerleft">
-                <img id="biglogo" src="../images/logo.png" alt="CoinDePara">
+                <a href="../index.html"><img id="biglogo" src="../images/logo.png" alt="CoinDePara"></a>
             </div>
             <div class="QuickLinks">
                 <div>
@@ -139,7 +151,7 @@
                             <h2>Qui Sommes-Nous ?</h2>
                         </li>
                         <li>A propos de Coin de para</li>
-                        <li>Contactez-Nous</li>
+                        <li><a href="./faq.html">Contactez-Nous</a></li>
                         <li>Dernières Nouvelles</li>
                         <li>Localisation</li>
                     </ul>
@@ -162,16 +174,16 @@
                         <li>
                             <h2>Liens Utiles</h2>
                         </li>
-                        <li>Parcourir Par Marque</li>
+                        <li>Filtrer</li>
                         <li>Newsletter</li>
                         <li>Offres/Coupons</li>
                     </ul>
                 </div>
             </div>
             <div class="socialmedias">
-                <img src="../images/SocialMediasIcons/logoinsta.png" alt="Instagram">
-                <img src="../images/SocialMediasIcons/logofb.png" alt="Facebook">
-                <img src="../images/SocialMediasIcons/logotwitter.png" alt="Twitter">
+                <a href="#"><img src="../images/SocialMediasIcons/logoinsta.png" alt="Instagram"></a>
+                <a href="#"><img src="../images/SocialMediasIcons/logofb.png" alt="Facebook"></a>
+                <a href="#"><img src="../images/SocialMediasIcons/logotwitter.png" alt="Twitter"></a>
             </div>
         </div>
     </footer>
