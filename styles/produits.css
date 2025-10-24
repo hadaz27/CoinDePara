@@ -86,7 +86,7 @@ body{
 
 .plusPdoduit ul{
     display: flex;
-    gap: 50px;
+    gap: 10px;
     flex-wrap: wrap; 
     justify-content: center;
     padding: 0;
