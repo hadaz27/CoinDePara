@@ -30,6 +30,7 @@ main {
 
 .product img {
     width: 300px;
+    height: 415px;
     border: solid 3px #0077B6;
     border-radius: 20px;
 }
@@ -89,6 +90,7 @@ main {
     margin-top: 10px;
     border-radius: 10px;
     font-weight: bold;
+    box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.2);
 }
 
 .details {
@@ -144,6 +146,7 @@ li {
     border-radius: 9999px;
     cursor: pointer;
     border: solid 3px black;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
 }
 
 .addbouton:hover {
@@ -162,7 +165,7 @@ li {
     color: white;
     cursor: pointer;
     border: solid 3px black;
-
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
 }
 
 .buy_button:hover {
@@ -171,6 +174,9 @@ li {
     font-size: 1.6rem;
 }
 
+.wishlisticon{
+    color:red;
+}
 .cta{
     align-items: start;
     height: 70px;
@@ -211,6 +217,17 @@ li {
     height: 55px;
 }
 
+#jaune{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+#jaune:hover{
+    width: 55px;
+    height: 55px;
+}
 #rose {
     height: 50px;
     width: 50px;
