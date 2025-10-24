@@ -1,6 +1,8 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .tittre-main {
@@ -124,7 +126,7 @@
 
 }
 
-.conteneur2:hover{
+.conteneur2:hover {
     background-color: #1792ab;
     box-shadow: 0 8px 18px #ccc;
     border: 3px solid #0077B6;
@@ -148,7 +150,7 @@ form {
 .form-group {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
 }
 
 .conteneur2 label {
@@ -173,16 +175,17 @@ form {
 .conteneur2 textarea {
     height: 70px;
 }
+
 .conteneur2 textarea:hover {
     background-color: #ffffff;
     width: 101%;
     height: 80px;
 }
 
-.conteneur2 input:hover{
+.conteneur2 input:hover {
     background-color: #ffffff;
     width: 101%;
-    height: 40px;
+    height: 25px;
 }
 
 .conteneur2 input:focus,
