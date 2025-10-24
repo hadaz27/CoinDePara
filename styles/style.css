@@ -95,7 +95,7 @@ body {
 .products-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem;
+  padding: 4rem 4rem 0 4rem;
 }
 
 .sell-title {
@@ -179,6 +179,65 @@ body {
 }
 .btn-cart:hover { background-color: #d1d5db; }
 
+/*--------------------------------------------------------------------*/
+.products-gallerie{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0rem 4rem 4rem 4rem;
+  gap: 3.7rem;
+}
+.full-product{
+  position: relative;
+  width: 29rem;
+  height: 33rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(193, 192, 192);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem 7rem 0 7rem;
+}
+.other-product{
+  width: 32rem;
+  height: 32rem;
+}
+.inside-product{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  border-radius: 1rem;
+  border: 1px solid rgb(193, 192, 192);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 0.2rem 4.5rem 0rem 4.5rem;
+  margin-bottom: 1rem;
+}
+.toothbrush{
+  width: 15rem;
+  height: auto;
+}
+.btn-cart1{
+  position: absolute;
+  bottom: 0.4rem;
+  left: 0.25rem;
+  padding: 0.5rem 13.6rem 0.5rem 13.6rem;
+  background-color: #EDF4F6;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+.inside-product a img{
+  width: 23rem;
+  height: auto;
+}
+.btn-cart2{
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0.25rem;
+  padding: 0.5rem 15.1rem 0.5rem 15.1rem;
+  background-color: #EDF4F6;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
 
 /*--------------------------------------------------------------------*/
 @media (max-width: 768px) {
@@ -238,8 +297,6 @@ body {
   .menu-toggle:checked + .menu-icon + .navbar {
     display: flex;
   }
-
-
   .hero-content {
     flex-direction: column;
     text-align: center;
@@ -263,5 +320,38 @@ body {
   .products-grid{
     grid-template-columns: repeat(auto-fill, minmax(105px, 2fr));
     gap: 30px;
+  }
+  .products-gallerie{
+    padding: 0rem 1rem 4rem 1.7rem;
+    gap: 1rem;
+  }
+  .full-product{
+    width: 10rem;
+    height: 18rem;
+    padding: 1rem 1rem 1rem 1.3rem;
+  }
+  .other-product{
+    width: 10rem;
+    height: 17rem;
+    padding: 0;
+  }
+  .toothbrush{
+    width: 7rem;
+    height: auto;
+  }
+  .btn-cart1{
+    bottom: 0.4rem;
+    left: 0.25rem;
+    padding: 0.5rem 4rem 0.5rem 4rem;
+  }
+  .inside-product{
+    padding: 0.3rem 0 0 0.3rem;
+  }
+  .inside-product a img{
+    width: 9rem;
+    height: auto;
+  }
+  .btn-cart2{
+    padding: 0.5rem 4.1rem 0.5rem 4.1rem;
   }
 }
