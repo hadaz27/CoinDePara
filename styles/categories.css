@@ -27,6 +27,7 @@ body {
     font-weight: bold;
     text-align: center;
     color: #333; 
+     
 }
 .catégories{
     padding: 30px; 
@@ -77,6 +78,7 @@ img{
         background-color: white;
     }
 }
+
 
 .bloc {
     display: flex;
