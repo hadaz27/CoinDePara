@@ -171,6 +171,10 @@ li {
     font-size: 1.6rem;
 }
 
+.cta{
+    align-items: start;
+    height: 70px;
+}
 .cta img {
     cursor: pointer;
 }
@@ -236,12 +240,6 @@ li {
     .container {
         display: grid;
         grid-template-rows: auto 1fr auto;
-    }
-
-    #biglogo {
-        width: 200px;
-        height: 80px;
-        margin-left: 105px;
     }
 
     /* details Du Produit version mobile */
