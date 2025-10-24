@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coin de Para</title>
+  <link rel="shortcut icon" href="images/home/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <!--link rel="stylesheet" href="styles/footer.css"-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <div class="home-page">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <div class="logo-section">
+          <a href="#"><img src="images/logo.png" alt="Coin De Para logo" class="logo"></a>
+        </div>
+
+        <div class="search-section">
+          <span class="material-icons search-icon">search</span>
+          <input type="text" placeholder="Recherche de produits" class="search-input">
+        </div>
+
+
+        <div class="actions">
+          <a href="#"><img src="images/home/addCart.svg" alt="ajouter au panier" class="cart"></a>
+          <div class="lang">
+            <span>FR</span>
+            <span class="material-icons">expand_more</span>
+          </div>
+          <div class="account">
+            <span><img src="images/home/user.svg" alt="mon compte"></span>
+            <a href="#">Mon compte</a>
+          </div>
+          <span class="search-icon-mobile"><img src="images/home/search.svg" alt="search icon"></span>
+          <span class="user-icon-mobile"><img src="images/home/user.svg" alt="mon compte"></span>
+
+        </div>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <nav class="navbar">
+        <a href="#">Accueil</a>
+        <a href="Pages/categories.html">Categories</a>
+        <a href="Pages/produits.html">Produits</a>
+        <a href="Pages/faq.html">FAQ</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="subtitle">COIN DE PARA</p>
+            <h1 class="title">STARTUP</h1>
+            <p class="desc">Tout ce que vous avez besoin</p>
+            <div class="under-line"></div>
+            <p class="desc-small">Disponible 24/7, Commander maintenant</p>
+            <a href="#" class="btn-promo">PROMOS 20% OFF</a>
+          </div>
+
+          <div class="hero-image">
+            <img src="images/home/doctor.png" alt="Doctor with a smartphone illustration">
+          </div>
+        </div>
+      </section>
+
+      <section class="products-container">
+        <div class="sell-title">
+          <h2>Les Produits Plus Vendus</h2>
+          <a href="#" class="btn-view">Voir Tout</a>
+        </div>
+
+        <div class="products-grid">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/home/img1.png" alt="GUM Dentifrice Menthe Fraîche">
+            </div>
+            <div class="card-body">
+              <h3>GUM Dentifrice Menthe Fraîche Aloe Vera Bio</h3>
+              <p class="price">103 DHS</p>
+              <button class="btn-cart"><img src="images/home/shopping-cart.svg" alt="cart button"></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="images/home/img2.png" alt="EUCERIN SUN SPRAY KIDS 200ml">
+              <span class="badge">OUT OF STOCK</span>
+            </div>
+            <div class="card-body">
+              <h3>EUCERIN SUN SPRAY KIDS 200ml</h3>
+              <p class="price">235 DHS</p>
+              <button class="btn-cart"><img src="images/home/shopping-cart.svg" alt="cart button"></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="images/home/img3.png" alt="SVR XERIAL 50 EXTREME CREME PIEDS 40ML">
+            </div>
+            <div class="card-body">
+              <h3>SVR XERIAL 50 EXTREME CREME</h3>
+              <p class="price">157 DHS</p>
+              <button class="btn-cart"><img src="images/home/shopping-cart.svg" alt="cart button"></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="images/home/img4.png" alt="Ducray Crème Melascreen">
+
+            </div>
+            <div class="card-body">
+              <h3>Ducray Crème Melascreen UV Taches</h3>
+              <p class="price">190 DHS</p>
+              <button class="btn-cart"><img src="images/home/shopping-cart.svg" alt="cart button"></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="images/home/img5.png" alt="NUXE Coffret Enchantement Lui">
+            </div>
+            <div class="card-body">
+              <h3>NUXE Coffret Enchantement Lui</h3>
+              <p class="price">430 DHS</p>
+              <button class="btn-cart"><img src="images/home/shopping-cart.svg" alt="cart button"></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="images/home/img6.png" alt="Mucosolvan 30mg/5ml Syrup">
+              <span class="badge">OUT OF STOCK</span>
+            </div>
+            <div class="card-body">
+              <h3>Mucosolvan 30mg / 5ml Syrup Sugar Free</h3>
+              <p class="price">250 DHS</p>
+              <button class="btn-cart"><img src="images/home/shopping-cart.svg" alt="cart button"></button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <!--footer>
+      <div class="footercontainer">
+        <div class="footerleft">
+          <img id="biglogo" src="images/logo.png" alt="CoinDePara">
+        </div>
+        <div class="QuickLinks">
+          <div>
+
+            <ul>
+              <li>
+                <h2>Qui Sommes-Nous ?</h2>
+              </li>
+              <li>A propos de Coin de para</li>
+              <li>Contactez-Nous</li>
+              <li>Dernières Nouvelles</li>
+              <li>Localisation</li>
+            </ul>
+          </div>
+          <div>
+
+            <ul>
+              <li>
+                <h2>Notre Politique</h2>
+              </li>
+              <li>Politique De Remboursement</li>
+              <li>Conditions D'expédition</li>
+              <li>Politique de Confidentialité</li>
+              <li>Conditions Générales</li>
+            </ul>
+          </div>
+          <div id="liensutiles">
+
+            <ul>
+              <li>
+                <h2>Liens Utiles</h2>
+              </li>
+              <li>Parcourir Par Marque</li>
+              <li>Newsletter</li>
+              <li>Offres/Coupons</li>
+            </ul>
+          </div>
+        </div>
+        <div class="socialmedias">
+          <img src="images/SocialMediasIcons/logoinsta.png" alt="Instagram">
+          <img src="images/SocialMediasIcons/logofb.png" alt="Facebook">
+          <img src="images/SocialMediasIcons/logotwitter.png" alt="Twitter">
+        </div>
+      </div>
+    </footer-->
+
+  </div>
+</body>
+
+</html>

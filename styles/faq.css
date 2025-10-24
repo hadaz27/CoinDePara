@@ -1,0 +1,238 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.tittre-main {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to right, #00B4D8, #66D2E8, #00B4D8);
+    text-decoration: underline;
+}
+
+
+.conteneur1 {
+    padding: 20px;
+}
+
+.details-faq {
+    border: 1px solid rgb(153, 153, 153);
+    margin-bottom: 15px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #ccc;
+    color: blue;
+
+}
+
+.details-faq:hover {
+    border: 1px solid rgb(153, 153, 153);
+    margin-bottom: 17px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #ccc;
+    color: rgb(254, 254, 254);
+    background-color: #0077B6;
+
+}
+
+.details-faq[open] {
+    border: 0;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #ccc;
+    background-color: #0077B6;
+    color: #fff;
+    font-size: large;
+}
+
+.details-faq[open]:hover {
+    background-color: #00B4D8;
+}
+
+
+.details-faq p {
+    color: black;
+    padding-left: 12px;
+}
+
+
+
+.lien-voir-plus {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.btn-voir-plus {
+    text-decoration: none;
+    border: 1px solid #0077B6;
+    padding: 6px 25px;
+    background-color: #0077B6;
+    color: white;
+    border-radius: 16px;
+    box-shadow: 10px 10px 10px #ccc;
+
+}
+
+.disabled {
+    display: none;
+}
+
+.btn-voir-plus:hover {
+    text-decoration: none;
+    border: 1px solid #0077B6;
+    padding: 6px 25px;
+    background-color: #0077B6;
+    color: white;
+    border-radius: 16px;
+    font-weight: bold;
+    box-shadow: 0 10px 10px #ccc;
+}
+
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.contact-section h2 {
+    color: rgb(4, 30, 87);
+    margin-bottom: 40px;
+
+}
+
+.conteneur2 {
+    background-color: #00B4D8;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px #ccc;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    border: 2px solid #0077B6;
+    margin-top: -40px;
+
+}
+
+.conteneur2:hover{
+    background-color: #1792ab;
+    box-shadow: 0 8px 18px #ccc;
+    border: 3px solid #0077B6;
+
+}
+
+.conteneur2 h2 {
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.conteneur2 label {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.conteneur2 input,
+.conteneur2 textarea {
+    width: 100%;
+    border-radius: 14px;
+    border: 1.6px solid white;
+    padding: 8px 12px;
+    background-color: #66D2E8;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    resize: none;
+    transition: 0.6s;
+}
+
+.conteneur2 textarea {
+    height: 70px;
+}
+.conteneur2 textarea:hover {
+    background-color: #ffffff;
+    width: 101%;
+    height: 80px;
+}
+
+.conteneur2 input:hover{
+    background-color: #ffffff;
+    width: 101%;
+    height: 40px;
+}
+
+.conteneur2 input:focus,
+.conteneur2 textarea:focus {
+    border: 1px solid #02a5f6;
+    background-color: #f0faff;
+    box-shadow: 0 0 10px rgba(2, 165, 246, 0.5);
+    outline: none;
+}
+
+.conteneur2 button {
+    align-self: center;
+    width: 50%;
+    min-width: 180px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    color: #005f8d;
+    font-weight: bold;
+    border-radius: 14px;
+    box-shadow: 0 3px 3px #005f8d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.conteneur2 button:hover {
+    background-color: #012b41;
+    color: white;
+    box-shadow: 0 3px 3px #02a5f6;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .conteneur2 {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .conteneur2 button {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .conteneur2 {
+        width: 95%;
+    }
+
+    .conteneur2 button {
+        width: 80%;
+        font-size: 14px;
+    }
+}

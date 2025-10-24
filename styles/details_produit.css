@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    grid-area: "main";
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.postheader {
+    background: linear-gradient(to right, #00B4D8, #66D2E8, #00B4D8);
+    text-align: center;
+    color: #FAFAFA;
+    height: 60px;
+    width: 100%;
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10px;
+}
+
+.product img {
+    width: 300px;
+    height: 415px;
+    border: solid 3px #0077B6;
+    border-radius: 20px;
+}
+
+.product img:hover {
+    width: 310px;
+    height: 425px;
+}
+
+.images_secondaires button img {
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.images_secondaires button{
+    background-color: white;
+    border: none;
+}
+.images_secondaires img:hover {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    width: 300px;
+    margin-top: 50px;
+}
+
+.product p {
+    text-align: center;
+    font-size: 1.5rem;
+    border: solid 3px #008000;
+    border-radius: 10px;
+    font: bold;
+    width: 200px;
+    margin-left: 16%;
+}
+
+.price_border {
+    display: flex;
+    justify-content: center;
+}
+
+#price {
+    display: flex;
+    border: solid 3px black;
+    width: 200px;
+    height: 50px;
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 105px;
+    width: 100%;
+}
+
+.detailsproduit {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    gap: 30px;
+    height: 630px;
+    cursor: pointer;
+}
+
+.details p,
+ul,
+li {
+    margin-left: 10px;
+    color: #0077B6;
+    font-size: 1.05rem;
+}
+
+.details ul {
+    margin-left: 15px;
+}
+
+.details h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cta {
+    display: flex;
+    gap: 50px;
+    height: 110px;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.addbouton {
+    background-color: #0077B6;
+    height: 70px;
+    width: 250px;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    border: solid 3px black;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.addbouton:hover {
+    height: 80px;
+    width: 260px;
+    font-size: 1.6rem;
+}
+
+.buy_button {
+    background-color: #4AE14A;
+    height: 70px;
+    width: 250px;
+    border-radius: 9999px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border: solid 3px black;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.buy_button:hover {
+    height: 80px;
+    width: 260px;
+    font-size: 1.6rem;
+}
+
+.wishlisticon{
+    color:red;
+}
+.cta{
+    align-items: start;
+    height: 70px;
+}
+.cta img {
+    cursor: pointer;
+}
+
+.cta img:hover {
+    width: 75px;
+    height: 65px;
+}
+
+#available_colors {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    height: 60px;
+}
+
+#available_colors button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#rose:hover {
+    width: 55px;
+    height: 55px;
+}
+
+#vert:hover {
+    width: 55px;
+    height: 55px;
+}
+
+#violet:hover {
+    width: 55px;
+    height: 55px;
+}
+
+#jaune{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+#jaune:hover{
+    width: 55px;
+    height: 55px;
+}
+#rose {
+    height: 50px;
+    width: 50px;
+    background-color: #FF7B92;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+#vert {
+    height: 50px;
+    width: 50px;
+    background-color: #4AE14A;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+#violet {
+    height: 50px;
+    width: 50px;
+    background-color: #9345FF;
+    border-radius: 50%;
+    border: 3px solid black;
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    /* details Du Produit version mobile */
+    .detailsproduit {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+        justify-content: center;
+        height: 80%;
+    }
+
+    .details {
+        margin: 0px;
+    }
+
+    .details p,
+    ul,
+    li {
+        margin-left: 10px;
+        color: #0077B6;
+        font-size: 1.05rem;
+    }
+
+    .price_border {
+        display: flex;
+        justify-content: center;
+    }
+
+    #price {
+        display: flex;
+        border: solid 3px black;
+        width: 200px;
+        height: 50px;
+        font-size: 1.5em;
+        margin-top: 10px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    .addbouton {
+        background-color: #0077B6;
+        height: 50px;
+        width: 150px;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1rem;
+        border-radius: 9999px;
+        cursor: pointer;
+        border: solid 3px black;
+    }
+
+    .buy_button {
+        background-color: #4AE14A;
+        height: 50px;
+        width: 150px;
+        border-radius: 9999px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        border: solid 3px black;
+    }
+
+    .addbouton:hover {
+        height: 60px;
+        width: 160px;
+        font-size: 1.1rem;
+    }
+
+    .buy_button:hover {
+        height: 60px;
+        width: 160px;
+        font-size: 1.1rem;
+    }
+
+    .cta {
+        gap: 10px;
+    }
+
+    .cta img {
+        width: 50px;
+        height: 45px;
+    }
+
+    .cta img:hover {
+        width: 60px;
+        height: 55px;
+    }
+
+    #available_colors {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 10px;
+        height: 60px;
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        width: 300px;
+        margin-top: 50px;
+        height: 550px;
+    }
+}
